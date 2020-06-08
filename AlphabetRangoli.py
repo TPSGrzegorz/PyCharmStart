@@ -1,4 +1,6 @@
 import string
+
+
 def rangoli(n):
     # your code goes here
     a = 97
@@ -7,7 +9,7 @@ def rangoli(n):
     bb = 0
     for i in range(2 * n - 1):
         print(((c + '-') * i).rjust(2 * (n - 1), '-') + chr(a + abs(n - i - 1)) + (
-                    ('-' + c) * i).ljust(2 * (n - 1), '-'))
+                ('-' + c) * i).ljust(2 * (n - 1), '-'))
 
     # print(chr(a+1).center(n, '-'))
     # for i in range(n//2 , 0, -1):
@@ -16,7 +18,7 @@ def rangoli(n):
 
 if __name__ == '__main__':
     size = list(map(int, input().split()))
-    #rangoli(size[0])
+    # rangoli(size[0])
     alpha = string.ascii_lowercase
     n = size[0]
     s = ''
