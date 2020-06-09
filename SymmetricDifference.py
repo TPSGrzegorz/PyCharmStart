@@ -1,0 +1,6 @@
+countA = int(input())
+listA = set(map((int), input().split()))
+countB = int(input())
+listB = set(map((int), input().split()))
+data = listA.symmetric_difference(listB)
+print(*sorted(data, key=int), sep='\n')
