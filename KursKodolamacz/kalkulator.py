@@ -1,8 +1,7 @@
 def kalkulator():
-    print(
-        """Witam Cię w programie Kalkulator.
-Dostępne operacje to +,-,*,/,//,%,**
-Format wprowadzania danych to <wartosc1> <operacja> <wartosc2>
+    print("""Witam Cię w programie Kalkulator.
+Dostępne operacje to +,-,*,/,//,%,**.
+Format wprowadzania danych to <wartosc1> <operacja> <wartosc2>.
 Przykład: 2 + 2'""")
     while True:
         a, operacja, b = input("Podaj równanie do policznie: ").split()
