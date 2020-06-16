@@ -1,12 +1,22 @@
-import cmath
-print(print(9))
-aa = 'a'
-bb = 'b'
-cc = aa + bb
-print(cc)
-print(cmath.polar(2))
+from itertools import combinations
 
-def test_fc(a , b):
+
+def main():
+    s, k = input().split()
+    #for i in range(1, int(k) + 1):
+    #    for j in combinations(sorted(s), i):
+    #        print(''.join(j))
+
+    print(*[''.join(j) for i in range(1, int(k) + 1) for j in combinations(sorted(s), i)],sep='\n')
+
+    # print(*((10 ** i // 9) * i for i in range(1, int(input()))), sep='\n')
+
+
+if __name__ == "__main__":
+    main()
+
+
+def test_fc(a, b):
     """
     >>> test_fc(4 , 5)
     9
