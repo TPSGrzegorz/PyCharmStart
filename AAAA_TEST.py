@@ -1,7 +1,7 @@
 from itertools import combinations
+from collections import Counter
 
-
-def main():
+def combination_function():
     s, k = input().split()
     #for i in range(1, int(k) + 1):
     #    for j in combinations(sorted(s), i):
@@ -10,6 +10,11 @@ def main():
     print(*[''.join(j) for i in range(1, int(k) + 1) for j in combinations(sorted(s), i)],sep='\n')
 
     # print(*((10 ** i // 9) * i for i in range(1, int(input()))), sep='\n')
+
+def main():
+    myList = [1, 1, 2, 3, 4, 5, 3, 2, 3, 4, 2, 1, 2, 3]
+    c = Counter(myList)
+    print(c)
 
 
 if __name__ == "__main__":
