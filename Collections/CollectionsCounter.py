@@ -13,9 +13,9 @@ def colection_cunter():
 
     print(result)
 
+
 def main():
     colection_cunter()
-
 
 
 if __name__ == "__main__":

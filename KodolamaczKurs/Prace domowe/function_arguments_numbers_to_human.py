@@ -22,7 +22,7 @@ def numbers_to_human(number: float):
     'minus one thousand nine hundred sixty nine'
 
     >>> numbers_to_human(-31.337)
-    'minus thirty one thousands and three hundreds thirty seven'
+    'minus thirty one and three hundreds thirty seven thousands'
 
     >>> numbers_to_human(-49.35)
     'minus forty nine and thirty five hundreds'
