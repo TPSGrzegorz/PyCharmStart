@@ -1,22 +1,17 @@
-DATA = [
-    (4.7, 3.2, 1.3, 0.2, 'setosa'),
-    (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-    (7.6, 3.0, 6.6, 2.1, 'virginica'),
-]
+import math
+
+x = int(input())
+n = int(input())
+mu = int(input())
+sigma = int(input())
+
+mu_sum = n * mu
+sigma_sum = math.sqrt(n) * sigma
 
 
-class Iris:
-    def __init__(self, features, label):
-        self.features = features
-        self.label = label
-
-    def iris_sum(self):
-        return sum(self.features)
-
-    def __str__(self):
-        return f'{self.label} {self.iris_sum()}'
+def cdf(x, mu, sigma):
+    Z = (x - mu) / sigma
+    return 0.5 * (1 + math.erf(Z / (math.sqrt(2))))
 
 
-for *features, label in DATA:
-    iris = Iris(features, label)
-    print(iris)
+print(round(cdf(x, mu_sum, sigma_sum), 4))
